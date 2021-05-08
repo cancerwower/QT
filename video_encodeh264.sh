@@ -1,0 +1,1 @@
+gst-launch-1.0 filesrc location=/home/jetson/Desktop/1.uyvy blocksize=4147200 ! videoparse width=1920 height=1080 format=uyvy framerate=30 ! videoconvert ! x264enc ! filesink location=/home/jetson/Desktop/out.h264
